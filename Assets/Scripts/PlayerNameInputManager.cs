@@ -14,7 +14,7 @@ public class PlayerNameInputManager : MonoBehaviour
 
         PhotonNetwork.NickName = playername;
 
-
+        
 
 
 
