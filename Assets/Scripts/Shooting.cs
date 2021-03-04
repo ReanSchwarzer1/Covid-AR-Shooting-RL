@@ -48,7 +48,6 @@ public class Shooting : MonoBehaviour
                     _hit.collider.gameObject.GetComponent<PhotonView>().RPC("TakeDamage",RpcTarget.AllBuffered,10f);
                 }
 
-
             }
 
 

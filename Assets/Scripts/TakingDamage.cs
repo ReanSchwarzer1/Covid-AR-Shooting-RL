@@ -12,12 +12,14 @@ public class TakingDamage : MonoBehaviourPunCallbacks
 
     private float health;
     public float startHealth = 1000f;
+    public GameObject enemy;
 
     // Start is called before the first frame update
     void Start()
     {
         health = startHealth;
         healthBar.fillAmount = health/startHealth;
+       // enemy = GameObject.FindGameObjectsWithTag("Enemy");
     }
 
     // Update is called once per frame
@@ -42,6 +44,18 @@ public class TakingDamage : MonoBehaviourPunCallbacks
                 Die();
             }
         }
+        if (c.tag == "Enemy")
+        {
+            //GameObject _player = GameObject.Find("Player");
+            DamageTime(150);
+
+            if (health <= 0f)
+            {
+                //Die
+                Die();
+            }
+        }
+
     }
     [PunRPC]
     public void DamageTime(float _damage)
@@ -72,6 +86,7 @@ public class TakingDamage : MonoBehaviourPunCallbacks
             Die();
         }
     }
+
 
     void Die()
     {
