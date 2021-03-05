@@ -72,15 +72,14 @@ public class TakingDamage : MonoBehaviourPunCallbacks
             }
         }
         if (c.tag == "Enemy")
+        {    if (c.gameObject.CompareTag("Enemy"))
         {
+            Debug.Log("\n------------->  INFECTED!!!   \n");
+
+        }
             //GameObject _player = GameObject.Find("Player");
             DamageTime(150);
-            infectAgent.Respawnee();
-            if (health <= 0f)
-            {
-                //Die
-                Die();
-            }
+            
         }
         if (c.tag == "Health")
         {

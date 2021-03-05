@@ -49,18 +49,23 @@ public class InfectAgent : Agent
             floorMeshRenderer.material=winMaterial;
             EndEpisode();
         }
-        if(other.TryGetComponent<Wall>(out Wall wall))
+        else{ if(other.TryGetComponent<Wall>(out Wall wall))
         {
             SetReward(-1f);
             floorMeshRenderer.material=loseMaterial;
 
             EndEpisode();
         }
+        else
+        {
+            Destroy(gameObject);
+        }}
     }
 
     public void Respawnee()
     {
-        transform.localPosition = new Vector3(Random.Range(296f, -252f), (float)15.5, Random.Range(-238f, 284f));
+       // Destroy(this.InfectAgent);
+        //transform.localPosition = new Vector3(Random.Range(296f, -252f), (float)15.5, Random.Range(-238f, 284f));
 
     }
 }
