@@ -12,15 +12,41 @@ public class TakingDamage : MonoBehaviourPunCallbacks
 
     private float health;
     public float startHealth = 1000f;
-    public GameObject enemy;
+   // private Renderer enemyRenderers;
+    //public MeshRenderer[] enemyRen;
+
+    private GameObject[] enemies;
+
+
+    CursorLockMode lockMode;
+
+    void Awake()
+    {
+        lockMode = CursorLockMode.Locked;
+        Cursor.lockState = lockMode;
+    }
 
     // Start is called before the first frame update
     void Start()
     {
         health = startHealth;
         healthBar.fillAmount = health/startHealth;
-       // enemy = GameObject.FindGameObjectsWithTag("Enemy");
+        // enemy = GameObject.FindGameObjectsWithTag("Enemy");
+
+        GameObject[] enemies = GameObject.FindGameObjectsWithTag("Enemy");
+        /*
+        enemyRen = new MeshRenderer[enemies.Length];
+        for (int i = 0; i < enemyRen.Length; i++)
+        {
+            enemyRen[i] = enemies[i].GetComponent<MeshRenderer>();
+        }
+        */
+
+        //enemyRenderers = new Renderer[enemies.Length];
+        //enemyRenderers = enemies.GetComponent<Renderer>();
     }
+
+
 
     // Update is called once per frame
     void Update()
@@ -71,6 +97,15 @@ public class TakingDamage : MonoBehaviourPunCallbacks
             Die();
         }
     }
+    [PunRPC]
+    public void Disappear()
+    {
+        //EnableRenderer(enemyRenderers, false);
+        Debug.Log("Renderer disabled");
+        //enemyRen.enabled = false; 
+        //enemyRenderers.enabled = false;
+        //GameObject.Find("Enemy").transform.localScale = new Vector3(0, 0, 0);
+    }
 
     [PunRPC]
     public void TakeDamage(float _damage)
@@ -95,4 +130,14 @@ public class TakingDamage : MonoBehaviourPunCallbacks
             PixelGunGameManager.instance.LeaveRoom();
         }
     }
+    
+    /*void EnableRenderer(Renderer[] rd, bool enable)
+    {
+        for (int i = 0; i < rd.Length; i++)
+        {
+            rd[i].isVisible = enable;
+            button.Visibility = Visibility.Collapsed;
+        }
+    }
+    */
 }
