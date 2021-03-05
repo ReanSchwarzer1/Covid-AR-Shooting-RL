@@ -42,7 +42,11 @@ public class Shooting : MonoBehaviour
             {
              
                 Debug.Log(_hit.collider.gameObject.name);
-                Destroy(_hit.collider.gameObject);
+                if(_hit.collider.gameObject.CompareTag("Enemy"))
+                {
+                    Destroy(_hit.collider.gameObject);
+                }
+                
                 
 
                 if (_hit.collider.gameObject.CompareTag("Player") && !_hit.collider.gameObject.GetComponent<PhotonView>().IsMine)
