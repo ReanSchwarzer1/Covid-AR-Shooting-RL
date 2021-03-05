@@ -10,13 +10,13 @@ public class Shooting : MonoBehaviour
 
     public float fireRate = 0.1f;
     float fireTimer;
-
+    public float c=0f;
     // Start is called before the first frame update
     void Start()
     {
         
     }
-
+    InfectAgent infect;
     // Update is called once per frame
     void Update()
     {
@@ -43,8 +43,20 @@ public class Shooting : MonoBehaviour
              
                 Debug.Log(_hit.collider.gameObject.name);
                 if(_hit.collider.gameObject.CompareTag("Enemy"))
-                {
-                    Destroy(_hit.collider.gameObject);
+                {   c+=1;
+                    InfectAgent sn = _hit.collider.gameObject.GetComponent<InfectAgent>();
+                    sn.Respawnee();
+                    if(c==7)
+                    {
+                        //InfectAgent sn = _hit.collider.gameObject.GetComponent<InfectAgent>();
+
+                        c=0;
+                        Debug.Log(c);
+
+                        //sn.Respawnee();
+                    }
+                    Debug.Log(c);
+                  //  Destroy(_hit.collider.gameObject);
                 }
                 
                 
