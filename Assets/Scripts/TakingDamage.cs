@@ -16,7 +16,7 @@ public class TakingDamage : MonoBehaviourPunCallbacks
     //public MeshRenderer[] enemyRen;
 
     private GameObject[] enemies;
-
+   // health = GameObject.FindGameObjectsWithTag("Health");
 
     CursorLockMode lockMode;
 
@@ -81,6 +81,13 @@ public class TakingDamage : MonoBehaviourPunCallbacks
                 Die();
             }
         }
+        if (c.tag == "Health")
+        {
+            //GameObject _player = GameObject.Find("Player");
+            TakeDamage(450);
+            //Destroy(health);
+        }
+
 
     }
     [PunRPC]
