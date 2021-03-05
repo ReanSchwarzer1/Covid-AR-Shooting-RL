@@ -7,7 +7,7 @@ using Unity.MLAgents.Sensors;
 
 public class InfectAgent : Agent
 {   
-    [SerializeField] private Transform targetTransform;
+    [SerializeField] public Transform targetTransform;
     [SerializeField] private Material winMaterial;
     [SerializeField] private Material loseMaterial;
     [SerializeField] private MeshRenderer floorMeshRenderer;
@@ -43,29 +43,26 @@ public class InfectAgent : Agent
     }
     private void OnTriggerEnter(Collider other)
     {   
+
         if(other.TryGetComponent<Goal>(out Goal goal))
         {
             SetReward(+1f);
             floorMeshRenderer.material=winMaterial;
             EndEpisode();
         }
-        else{ if(other.TryGetComponent<Wall>(out Wall wall))
+        if(other.TryGetComponent<Wall>(out Wall wall))
         {
             SetReward(-1f);
             floorMeshRenderer.material=loseMaterial;
 
             EndEpisode();
         }
-        else
-        {
-            Destroy(gameObject);
-        }}
+        
     }
 
     public void Respawnee()
     {
-       // Destroy(this.InfectAgent);
-        //transform.localPosition = new Vector3(Random.Range(296f, -252f), (float)15.5, Random.Range(-238f, 284f));
+        transform.localPosition=new Vector3(Random.Range(296f, -252f),(float)5.5,Random.Range(-238f,284f));
 
     }
 }
