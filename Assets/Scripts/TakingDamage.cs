@@ -12,8 +12,9 @@ public class TakingDamage : MonoBehaviourPunCallbacks
 
     private float health;
     public float startHealth = 1000f;
-   // private Renderer enemyRenderers;
+    // private Renderer enemyRenderers;
     //public MeshRenderer[] enemyRen;
+    InfectAgent infectAgent;
 
     private GameObject[] enemies;
    // health = GameObject.FindGameObjectsWithTag("Health");
@@ -74,7 +75,7 @@ public class TakingDamage : MonoBehaviourPunCallbacks
         {
             //GameObject _player = GameObject.Find("Player");
             DamageTime(150);
-
+            infectAgent.Respawnee();
             if (health <= 0f)
             {
                 //Die
@@ -103,15 +104,6 @@ public class TakingDamage : MonoBehaviourPunCallbacks
             //Die
             Die();
         }
-    }
-    [PunRPC]
-    public void Disappear()
-    {
-        //EnableRenderer(enemyRenderers, false);
-        Debug.Log("Renderer disabled");
-        //enemyRen.enabled = false; 
-        //enemyRenderers.enabled = false;
-        //GameObject.Find("Enemy").transform.localScale = new Vector3(0, 0, 0);
     }
 
     [PunRPC]

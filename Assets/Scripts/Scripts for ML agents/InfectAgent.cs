@@ -57,4 +57,10 @@ public class InfectAgent : Agent
             EndEpisode();
         }
     }
+
+    public void Respawnee()
+    {
+        transform.localPosition = new Vector3(Random.Range(296f, -252f), (float)15.5, Random.Range(-238f, 284f));
+
+    }
 }
