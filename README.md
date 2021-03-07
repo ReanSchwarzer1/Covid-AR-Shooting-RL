@@ -1,2 +1,2 @@
-# Covid-AR-Shooting-RL
+# Covid-AR-Shooting-RL   (viRL-fevAR)
 Made for the Covid India Gameathon
