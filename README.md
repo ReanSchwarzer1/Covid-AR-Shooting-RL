@@ -59,7 +59,7 @@ UI Implementation |  Unity UI x Affinity Designer
 
 
 ![Demo1](https://github.com/ReanSchwarzer1/Covid-AR-Shooting-RL/blob/main/Images/game.gif "Demo1")
-![Demo2](https://github.com/ReanSchwarzer1/Covid-AR-Shooting-RL/blob/main/Images/rl.gif "Demo2")
+![Hnet com-image](https://user-images.githubusercontent.com/42490058/110340683-878f0180-804f-11eb-9fc5-a1980134b4ad.gif)
 
 
 <h2 align="left"> Instructions </h2>  
