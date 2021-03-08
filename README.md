@@ -58,8 +58,8 @@ UI Implementation |  Unity UI x Affinity Designer
 <li>Link to training demo: https://youtu.be/OmE1qjR9-T0 <br></li>
 
 
-![Demo1](https://github.com/tamizhis5n/ARchitech-real-estate-AR-solution/blob/master/Images/demo1.gif "Demo1")
-![Demo2](https://github.com/tamizhis5n/ARchitech-real-estate-AR-solution/blob/master/Images/demo2.gif "Demo2")
+![Demo1](https://github.com/ReanSchwarzer1/Covid-AR-Shooting-RL/blob/main/Images/game.gif "Demo1")
+![Demo2](https://github.com/ReanSchwarzer1/Covid-AR-Shooting-RL/blob/main/Images/rl.gif "Demo2")
 
 
 <h2 align="left"> Instructions </h2>  
