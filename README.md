@@ -56,10 +56,12 @@ UI Implementation |  Unity UI x Affinity Designer
 <h2 align="left"> Working Demo </h2>  
 <li>Link to gameplay video:https://youtu.be/eyI4ssMxbvU <br></li>
 <li>Link to training demo: https://youtu.be/OmE1qjR9-T0 <br></li>
+<li>Link to pitch: https://youtu.be/kwSkf1Cn35Y <br></li>
 
 
 ![Demo1](https://github.com/ReanSchwarzer1/Covid-AR-Shooting-RL/blob/main/Images/game.gif "Demo1")
 ![temp (1)](https://user-images.githubusercontent.com/42490058/110345792-f3279d80-8054-11eb-80e6-de8856f7c83c.gif)
+![temp (2)](https://github.com/ReanSchwarzer1/Covid-AR-Shooting-RL/blob/main/Images/gg.gif)
 
 
 <h2 align="left"> Instructions </h2>  
