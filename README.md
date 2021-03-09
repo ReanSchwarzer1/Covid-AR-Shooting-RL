@@ -54,7 +54,7 @@ UI Implementation |  Unity UI x Affinity Designer
 
 
 <h2 align="left"> Working Demo </h2>  
-<li>Link to gameplay video: https://youtu.be/7yl24mxf_io <br></li>
+<li>Link to gameplay video:https://youtu.be/eyI4ssMxbvU <br></li>
 <li>Link to training demo: https://youtu.be/OmE1qjR9-T0 <br></li>
 
 
