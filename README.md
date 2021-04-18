@@ -1,7 +1,7 @@
 <html>
 <body>
 <h1 align="center"> Covid-AR-Shooting-RL   (Anti viRL)
-</h1> <img src="./images/antiviRL.png" width="300" height="300" align="right" align="top"> 
+</h1> <img src="./Images/antiviRL.png" width="300" height="300" align="right" align="top"> 
 
 
 <h2 align="left"> This project is the 3rd place winner in the Covid-19 Gameathon organized by Angelhack. </h2>  
