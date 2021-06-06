@@ -67,6 +67,12 @@ UI Implementation |  Unity UI x Affinity Designer
 <li>Download and install the .apk file to run on an ARCore supported android device.<br></li>
 <li>For PC, just click on the .exe file inside build.<br></li>
 
+  
+<h1 align="left"> Sponsors </h1>  
+</h1> <img src="./Images/getacall.jpeg" width="100" height="100" align="right" align="top"> 
+</h1> <img src="./Images/usconsulate.png" width="100" height="100" align="right" align="top">
+</h1> <img src="./Images/stfrancis.png" width="100" height="100" align="right" align="top">
+</h1> <img src="./Images/angel.png" width="100" height="100" align="right" align="top"> 
 </body>
 </html>
 
