@@ -69,11 +69,14 @@ UI Implementation |  Unity UI x Affinity Designer
 <h2 align="left"> Pitch </h2>  
 <li>Link to pitch: https://youtu.be/kwSkf1Cn35Y <br></li>
   
-<h1 align="left"> Sponsors </h1>  
+<h1 align="left"> Sponsors </h1>
+</h1> <img src="./Images/heart.jpeg" width="100" height="100" align="right" align="top">
 </h1> <img src="./Images/getacall.jpeg" width="100" height="100" align="right" align="top"> 
 </h1> <img src="./Images/usconsulate.png" width="100" height="100" align="right" align="top">
 </h1> <img src="./Images/stfrancis.png" width="100" height="100" align="right" align="top">
 </h1> <img src="./Images/angel.png" width="100" height="100" align="right" align="top"> 
+
+
 </body>
 </html>
 
