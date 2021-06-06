@@ -55,7 +55,6 @@ UI Implementation |  Unity UI x Affinity Designer
 <h2 align="left"> Working Demo </h2>  
 <li>Link to gameplay video:https://youtu.be/eyI4ssMxbvU <br></li>
 <li>Link to training demo: https://youtu.be/OmE1qjR9-T0 <br></li>
-<li>Link to pitch: https://youtu.be/kwSkf1Cn35Y <br></li>
 
 
 ![Demo1](https://github.com/ReanSchwarzer1/Covid-AR-Shooting-RL/blob/main/Images/game.gif "Demo1")
@@ -67,6 +66,8 @@ UI Implementation |  Unity UI x Affinity Designer
 <li>Download and install the .apk file to run on an ARCore supported android device.<br></li>
 <li>For PC, just click on the .exe file inside build.<br></li>
 
+<h2 align="left"> Pitch </h2>  
+<li>Link to pitch: https://youtu.be/kwSkf1Cn35Y <br></li>
   
 <h1 align="left"> Sponsors </h1>  
 </h1> <img src="./Images/getacall.jpeg" width="100" height="100" align="right" align="top"> 
