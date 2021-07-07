@@ -6,7 +6,8 @@
 
 
 
-<h2 align="left"> This project is the 3rd place winner in the Covid-19 Gameathon organized by Angelhack. </h2>  
+<h2 align="left"> This project is the 3rd place winner in the Covid-19 Gameathon organized by Angelhack. </h2>
+</h1> <img src="./Images/14.png" width="450" height="300"> 
 <h2 align="left"> This project was made in purpose for the Covid-19 Gameathon organized by Angelhack. </h2>  
 The repository contains both the PC and the android AR build.
 <li>The PC build can be found inside the Build folder.<br></li>
